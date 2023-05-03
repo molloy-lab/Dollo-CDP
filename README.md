@@ -8,9 +8,9 @@ git clone https://github.com/molloy-lab/Dollo-CDP.git
 cd Dollo-CDP/src
 make
 ```
-Note: gcc version 8.5.0 or a later version is required to compile the code. On Mac OS X, you should update the `CC` variable in the Mac file if you installed gcc with homebrew, for example.
+Note: gcc version 8.5.0 or a later version is required to compile the code. On Mac OS X, you should update the `CC` variable in the Mac file if you installed gcc with homebrew, for example. 
 
-Before running Dollo-CDP, you must download ASTRAL and extract the zip folder into the src directory:
+Alternatively, you could download binaries in a release. In either case, before running Dollo-CDP, you must download ASTRAL and extract the zip folder into the src directory:
 ```
 git clone https://github.com/smirarab/ASTRAL.git
 mv ASTRAL tmp-ASTRAL
