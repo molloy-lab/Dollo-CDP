@@ -27,8 +27,9 @@ To run Dollo-CDP, use command:
 ```
 ./dollo-cdp -i <input nexus file> -o <output file name>
 ```
+We recommend working through [this example](example/README.md).
 
-Also, check out the Dollo-CDP usage options with this command:
+We also recommend checking out the Dollo-CDP usage options with this command:
 ```
 ./dollo-cdp -h
 ```
