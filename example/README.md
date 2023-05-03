@@ -30,7 +30,7 @@ End;
 To run Dollo-CDP on the Myotis data set, use the following command:
 
 ```
-../../src/dollo-cdp-v1.0.0-osx \
+../src/dollo-cdp \
     -i myotis_ves.nex \
     -g Davi \
     -o dollo-cdp-myotis-ves.tre
@@ -64,11 +64,10 @@ To analyze data sets with larger numbers of taxa, you may wish to speed up Dollo
 ```
 Now let's give these trees as constrains to Dollo-CDP.
 ```
-../../src/dollo-cdp-v1.0.0-osx \
+../src/dollo-cdp \
     -i myotis_ves.nex \
     -g Davi \
     -t paup-dollo-hsearch-myotis-ves-all.trees \
     -o dollo-cdp-plus-hsearch-constraints-myotis-ves.tre
 ```
 This gives us the same tree as the other two analyses.
-
