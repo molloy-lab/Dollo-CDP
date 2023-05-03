@@ -10,9 +10,9 @@
 using namespace std;
 
 const std::string help = 
-"=================================== Dollo-CDP ===================================\n"
-"This is version 1.0.0 of Dollo-CDP, a program that solves the large Dollo\n" 
-"parsimony problem within a clade-constrained version of the solution space.\n\n" 
+"===================================== Dollo-CDP =====================================\n"
+"Dollo-CDP is a program that solves the large Dollo parsimony problem for binary\n"
+"characters (missing values allowed) within a clade-constrained version of tree space.\n\n" 
 "USAGE for Large Dollo problem:\n"
 "./dollo-cdp -i <input characters file> -g <outgroup name> -o <output file>\n\n"
 "USAGE for small Dollo parsimony problem:\n"
@@ -36,7 +36,7 @@ const std::string help =
 "        Name of file for writing output species tree (default: stdout)\n\n"
 "Contact: Post issue to Github (https://github.com/molloy-lab/Dollo-CDP)\n"
 "        or email Junyan Dai (jdai1234@umd.edu) & Erin Molloy (ekmolloy@umd.edu)\n"
-"================================================================================\n\n";
+"====================================================================================\n\n";
 
 
 
