@@ -42,27 +42,27 @@ The output tree should be
 ```
 This tree has a Dollo score of `11618` and is topologically equivalent to the Dollo tree presented in Figure 2A by Korstian et al.
 
-Because this data set has only 11 taxa, we can also analyze this data set using branch-and-bound. To perform this analysis, we performed this analysis using [PAUP*](https://paup.phylosolutions.com), although you might also try the[Dollop function distributed with Phylip](https://evolution.genetics.washington.edu/phylip/doc/dollop.html).
+Because this data set has only 11 taxa, we can also analyze this data set using branch-and-bound. We performed this analysis using [PAUP*](https://paup.phylosolutions.com), although you might also try the [Dollop function distributed with Phylip](https://evolution.genetics.washington.edu/phylip/doc/dollop.html).
 
-After downloading PAUP* to this directory, do the following (making sure to use the correct binary name):
+After downloading PAUP* to this directory, use the following commands, making sure to use the correct binary name:
 ```
 gunzip paup4a168_osx
 chmod a+x paup4a168_osx
 ./paup4a168_osx -n paup-dollo-bnb-myotis-ves.nex 
 ```
-The resulting tree is topologically equivalent to the one recovered by Dollo-CDP. Note that PAUP* reports a Dollo score of 20939, which differs from our score because we only counts losses (1 -> 0) and does not count gains (0 -> 1). You can score the PAUP tree using the command:
+The resulting tree is topologically equivalent to the one recovered by Dollo-CDP. Note that PAUP* reports a Dollo score of `20939`, which differs from our score because we only count losses (`1 -> 0`) and do not count gains (`0 -> 1`). You can score the PAUP tree using the command:
 ```
-../../src/dollo-cdp-v1.0.0-osx -q paup-dollo-bnb-myotis-ves-strict.tre -i myotis_ves.nex 
+../src/dollo-cdp \
+    -q paup-dollo-bnb-myotis-ves-strict.tre \
+    -i myotis_ves.nex 
 ```
 The output score is `11618`.
 
-
-To analyze data sets with larger numbers of taxa, you may wish to speed up Dollo-CDP by further constraining the space of allowed solutions. This can be achieved by performing heuristic search with PAUP*, and then giving the resulting trees to Dollo-CDP. Let's create a constraints by building a starting tree via random taxon addition and then performing TBR moves, saving the 100 best scoring trees.
-
+To analyze data sets with larger numbers of taxa, you may wish to speed-up Dollo-CDP by further constraining the space of allowed solutions. This can be achieved by performing heuristic search with PAUP* and then giving the resulting trees to Dollo-CDP as constraints. Let's create a constraints by building a starting tree via random taxon addition and then performing TBR moves, saving the 100 best scoring trees.
 ```
 ./paup4a168_osx -n paup-dollo-hsearch-myotis-ves.nex 
 ```
-Now let's give these trees as constrains to Dollo-CDP.
+Now let's give these trees as constraints to Dollo-CDP.
 ```
 ../src/dollo-cdp \
     -i myotis_ves.nex \
@@ -70,4 +70,4 @@ Now let's give these trees as constrains to Dollo-CDP.
     -t paup-dollo-hsearch-myotis-ves-all.trees \
     -o dollo-cdp-plus-hsearch-constraints-myotis-ves.tre
 ```
-This gives us the same tree as the other two analyses.
+This gives us the same tree as the other two analyses with Dollo parsimony.
