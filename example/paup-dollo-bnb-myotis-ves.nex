@@ -1,0 +1,11 @@
+#NEXUS
+BEGIN PAUP;
+set autoclose=yes warntree=no warnreset=no;
+execute myotis_ves.nex;
+outgroup Davi;
+ctype dollo:1-10595;
+bandb;
+rootTrees;
+contree all/strict=yes treefile=paup-dollo-bnb-myotis-ves-strict.tre format=newick;
+savetrees File=paup-dollo-bnb-myotis-ves-all.trees root=yes trees=all format=newick;
+END;
