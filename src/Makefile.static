@@ -1,5 +1,5 @@
 CC=g++
-CFLAGS= -std=c++11 -O3 -funroll-loops -fomit-frame-pointer
+CFLAGS= -std=c++11 -O3 -funroll-loops -fomit-frame-pointer -static
 
 #TARGET = constraint_large_dollo
 #SRC = $(#wildcard *.cpp)
