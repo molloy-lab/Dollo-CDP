@@ -59,8 +59,8 @@ std::tuple<unsigned int,std::string> bottom_up(clades_set X, character_record &r
       St[u_str] = {record[taxon]};
 
       f[pp(u_str, record[taxon])] = 0;
-      if (subp_num % 100 == 0) std::cout << std::setw(5) << subp_num << " subproblems computed." << std::endl;
-      std::cout << "\rComputing subproblem:" << std::setw(5) << subp_num++;
+      if (subp_num % 100 == 0) std::cout << std::setw(12) << subp_num << " subsubproblems computed." << std::endl;
+      std::cout << "\rComputing subsubproblem:" << std::setw(12) << subp_num++;
       std::cout.flush();
     } else if (u.count() >= 2) {
       clades_set memo;
@@ -124,8 +124,8 @@ std::tuple<unsigned int,std::string> bottom_up(clades_set X, character_record &r
         
 	    if (it3 == f.end() || f[pp(u_str,t)] > tmp) {
 
-	      if (subp_num % 100 == 0) std::cout << std::setw(5) << subp_num << " subproblems computed." << std::endl;
-	      std::cout << "\rComputing subproblem:" << std::setw(5) << subp_num++;
+	      if (subp_num % 100 == 0) std::cout << std::setw(12) << subp_num << " subsubproblems computed." << std::endl;
+	      std::cout << "\rComputing subsubproblem:" << std::setw(12) << subp_num++;
 	      std::cout.flush();
 
 	      f[pp(u_str,t)] = tmp;
