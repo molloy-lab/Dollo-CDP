@@ -11,8 +11,8 @@ using namespace std;
 
 const std::string help = 
 "=================================== Dollo-CDP ===================================\n"
-"This program solves the large Dollo parsimony problem within a constrained\n"
-"version of the solution space.\n\n" 
+"This is version 1.0.0 of Dollo-CDP, a program that solves the large Dollo\n" 
+"parsimony problem within a clade-constrained version of the solution space.\n\n" 
 "USAGE for Large Dollo problem:\n"
 "./dollo-cdp -i <input characters file> -g <outgroup name> -o <output file>\n\n"
 "USAGE for small Dollo parsimony problem:\n"
@@ -57,6 +57,12 @@ void print_clades_set(clades_set cs, vector<string> &labels) {
 }
 
 int main(int argc, char** argv) {
+  std::cout << "Dollo-CDP version 1.0.0\nCOMMAND: ";
+  for (int j = 0; j < argc; j ++) 
+    std::cout << argv[j] << " ";
+  std::cout << std::endl;
+
+
   if (argc == 1) {std::cout << help; return 0;}
   auto start = std::chrono::high_resolution_clock::now();
   string filename1 = "";

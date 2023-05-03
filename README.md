@@ -34,9 +34,13 @@ Also, check out the Dollo-CDP usage options with this command:
 ```
 The output should be
 ```
+Dollo-CDP version 1.0.0
+COMMAND: ./dollo-cdp -h 
+Not enough arguments given!
+
 =================================== Dollo-CDP ===================================
-This program solves the large Dollo parsimony problem within a constrained
-version of the solution space.
+This is version 1.0.0 of Dollo-CDP, a program that solves the large Dollo
+parsimony problem within a clade-constrained version of the solution space.
 
 USAGE for Large Dollo problem:
 ./dollo-cdp -i <input characters file> -g <outgroup name> -o <output file>
