@@ -1,0 +1,22 @@
+CC=g++
+CFLAGS= -O3 -funroll-loops -fomit-frame-pointer -static
+
+#TARGET = constraint_large_dollo
+#SRC = $(#wildcard *.cpp)
+#OBJ = $(#patsubst %.cpp, %.o, $(#SRC))
+all: dollo-cdp
+
+#$(#TARGET): $(#OBJ)
+#	$(#CC) -o $@ $^
+
+#%.o: %.cpp
+#	$(#CC) $(#CFLAGS) -I boost_1_80_0 $< -o $@
+
+dollo-cdp: driver.cpp binary_character_matrix.cpp
+	$(CC) -DUSE_SHRT $(CFLAGS) -I boost_1_80_0 -o dollo-cdp driver.cpp binary_character_matrix.cpp
+
+
+.PHONY: clean
+clean:
+	rm dollo-cdp
+
