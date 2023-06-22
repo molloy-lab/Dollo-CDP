@@ -1,6 +1,6 @@
 # Dollo-CDP
 
-This repository corresponds to the method described in this paper: ``Dollo-CDP: Leveraging constraints plus dynamic programming for the large Dollo parsimony problem.''
+This repository corresponds to the method described in the paper: ``Leveraging constraints plus dynamic programming for the large Dollo parsimony problem'' (accepted to WABI 2023).
 
 To build, Dollo-CDP use commands:
 ```
