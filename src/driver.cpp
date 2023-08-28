@@ -35,11 +35,11 @@ const std::string help =
 "[(-o|--output) <output file>]\n"
 "        Name of file for writing output species tree (default: stdout)\n\n"
 "Contact: Post issue to Github (https://github.com/molloy-lab/Dollo-CDP)\n"
-"         or email Junyan Dai (jdai1234@umd.edu) & Erin Molloy (ekmolloy@umd.edu)\n\n"
+"        or email Junyan Dai (jdai1234@umd.edu) & Erin Molloy (ekmolloy@umd.edu)\n\n"
 "If you use Dollo-CDP in your work, please cite:\n"
-"         Dai, Rubel, Han, Molloy, 2023, \"Leveraging Constraints Plus Dynamic\n"
-"         Programming for the Large Dollo Parsimony Problem\", WABI 2023,\n"
-"         https://drops.dagstuhl.de/opus/volltexte/2023/18631/."
+"  Dai, Rubel, Han, Molloy, 2023, \"Leveraging Constraints Plus Dynamic \n"
+"  Programming for the Large Dollo Parsimony Problem\", WABI 2023,\n"
+"  https://drops.dagstuhl.de/opus/volltexte/2023/18631/."
 "====================================================================================\n\n";
 
 
