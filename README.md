@@ -77,6 +77,11 @@ OPTIONS:
 
 Contact: Post issue to Github (https://github.com/molloy-lab/Dollo-CDP)
         or email Junyan Dai (jdai1234@umd.edu) & Erin Molloy (ekmolloy@umd.edu)
+
+If you use Dollo-CDP in your work, please cite:
+  Dai, Rubel, Han, Molloy, 2023, "Leveraging Constraints Plus Dynamic
+  Programming for the Large Dollo Parsimony Problem," WABI 2023,
+  https://drops.dagstuhl.de/opus/volltexte/2023/18631/.
 ================================================================================
 ```
 
