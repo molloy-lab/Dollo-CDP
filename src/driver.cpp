@@ -77,12 +77,6 @@ int main(int argc, char** argv) {
   bool large_Dollo = true;
   bool write_bptrees_and_exit = false;
   bool user_defined_search_space = false;
-  
-  if (argc < 3) {
-    std::cout << "Not enough arguments given!\n\n";
-    std::cout << help;
-    return 1;
-  }
 
   for (int i = 0; i < argc; i++) {
     string opt(argv[i]);
@@ -93,6 +87,12 @@ int main(int argc, char** argv) {
     if (opt == "-t" || opt == "--trees" && i < argc - 1) {user_defined_search_space = true; filename2 = argv[++ i];}
     if (opt == "-x" || opt == "--outgroup" || opt == "-g" && i < argc - 1) outname = argv[++ i];
     if (opt == "-o" || opt == "--output"&& i < argc - 1) filename3 = argv[++ i];
+  }
+
+  if (argc < 3) {
+    std::cout << "Not enough arguments given!\n\n";
+    std::cout << help;
+    return 1;
   }
 
   if (filename1 == "") {
