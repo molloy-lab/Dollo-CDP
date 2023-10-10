@@ -71,3 +71,5 @@ Now let's give these trees as constraints to Dollo-CDP.
     -o dollo-cdp-plus-hsearch-constraints-myotis-ves.tre
 ```
 This gives us the same tree as the other two analyses with Dollo parsimony.
+
+A copy of the PAUP* user manual is available here: [https://rothlab.ucdavis.edu/genhelp/paupsearch.html](https://rothlab.ucdavis.edu/genhelp/paupsearch.html).
