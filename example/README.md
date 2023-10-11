@@ -72,4 +72,4 @@ Now let's give these trees as constraints to Dollo-CDP.
 ```
 This gives us the same tree as the other two analyses with Dollo parsimony.
 
-A copy of the PAUP* user manual is available here: [https://rothlab.ucdavis.edu/genhelp/paupsearch.html](https://rothlab.ucdavis.edu/genhelp/paupsearch.html).
+A copy of the PAUP* user manual is available [here](https://phylosolutions.com/paup-documentation/paupmanual.pdf); also see [https://rothlab.ucdavis.edu/genhelp/paupsearch.html](https://rothlab.ucdavis.edu/genhelp/paupsearch.html).
