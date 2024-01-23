@@ -38,15 +38,17 @@ uint8_t** read_characters(std::string filename, unsigned int &k, boost::unordere
     if (std::regex_search(line, match, ntax_reg)) {
       total_taxons_num = stoi(match[1]);
       end = total_taxons_num + 7;
+      std::cout << "taxons_num = " << total_taxons_num << std::endl;
     }
     
     if (std::regex_search(line, match, nchar_reg)) {
       k = stoi(match[1]);
-      //std::cout << "k is " << k << std::endl;
+      std::cout << "chars num is " << k << std::endl;
       taxon_chars = new uint8_t*[k];
       //std::cout << "taxons num is " << total_taxons_num << std::endl;
       for (int i = 0; i < k; i++)
 	taxon_chars[i] = new uint8_t[total_taxons_num];
+    std::cout << "finished creating transposed matrix " << std::endl;
     }
 
     if (line_num >= 7 && line_num < end) {
@@ -70,15 +72,19 @@ uint8_t** read_characters(std::string filename, unsigned int &k, boost::unordere
 	}
       */
       unsigned int curr_pos = 0;
-
-      while (line[curr_pos] != ' ') {
+      std::cout << "line length = " << line.size() << std::endl;
+      std::cout << line << std::endl;
+      while (!std::isblank(line[curr_pos])) {
+        // std::cout << "line[" << curr_pos << "]" << line[curr_pos] << std::endl;
 	curr_pos++;
-      }
       
+      }
+    
+      std::cout << curr_pos << std::endl;
       std::string tax = line.substr(0,curr_pos);
-      //std::cout << tax << "|" << std::endl;
+      // std::cout << tax << "|" << std::endl;
 
-      while (line[curr_pos] == ' ') {
+      while (std::isblank(line[curr_pos])) {
 	curr_pos++;
 	
       }
@@ -111,6 +117,7 @@ uint8_t** read_characters(std::string filename, unsigned int &k, boost::unordere
     std::cout << pair.first << ": " << pair.second << std::endl;
   }
   */
+  std::cout << "finished reading characters matrix " << std::endl;
   return taxon_chars;
 }
 
