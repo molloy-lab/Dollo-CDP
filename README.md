@@ -45,12 +45,10 @@ We also recommend checking out the Dollo-CDP usage options with this command:
 The output should be
 ```
 Dollo-CDP version 1.0.0
-COMMAND: ./dollo-cdp -h 
-Not enough arguments given!
-
-=================================== Dollo-CDP ===================================
-This is version 1.0.0 of Dollo-CDP, a program that solves the large Dollo
-parsimony problem within a clade-constrained version of the solution space.
+COMMAND: ./dollo-cdp 
+===================================== Dollo-CDP =====================================
+Dollo-CDP is a program that solves the large Dollo parsimony problem for binary
+characters (missing values allowed) within a clade-constrained version of tree space.
 
 USAGE for Large Dollo problem:
 ./dollo-cdp -i <input characters file> -g <outgroup name> -o <output file>
@@ -80,9 +78,9 @@ Contact: Post issue to Github (https://github.com/molloy-lab/Dollo-CDP)
         or email Junyan Dai (jdai1234@umd.edu) & Erin Molloy (ekmolloy@umd.edu)
 
 If you use Dollo-CDP in your work, please cite:
-  Dai, Rubel, Han, Molloy, 2023, "Leveraging Constraints Plus Dynamic
-  Programming for the Large Dollo Parsimony Problem," WABI 2023,
-  https://drops.dagstuhl.de/opus/volltexte/2023/18631/.
-================================================================================
+  Dai, Rubel, Han, Molloy, 2024, "Dollo-CDP: a polynomial-time algorithm for
+  the clade-constrained large Dollo parsimony problem", Algorithms for Molecular
+  Biology, https://doi.org/10.1186/s13015-023-00249-9.
+====================================================================================
 ```
 
