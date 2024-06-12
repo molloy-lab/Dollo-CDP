@@ -6,7 +6,7 @@ Under the Dollo assumption, there can be exactly one forward mutation (0->1) per
 Our approach is novel in that it is guaranteed to return an optimal solution to the Dollo parsimony problem that obeys the set of constraints (clades) given as input.
 These constraints can be generated automatically from the character data or via a previous heuristic search, as described in [this example](example/README.md).
 
-To learn more about Dollo-CDP, check out the related paper in [Algorithms Mol Biol  / WABI 2023]([https://drops.dagstuhl.de/opus/volltexte/2023/18631](https://doi.org/10.1186/s13015-023-00249-9)).
+To learn more about Dollo-CDP, check out the related paper in [Algorithms Mol Biol  / WABI 2023](https://doi.org/10.1186/s13015-023-00249-9).
 
 Usage
 -----
