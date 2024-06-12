@@ -44,7 +44,7 @@ We also recommend checking out the Dollo-CDP usage options with this command:
 ```
 The output should be
 ```
-Dollo-CDP version 1.0.0
+Dollo-CDP version 1.0.1
 COMMAND: ./dollo-cdp 
 ===================================== Dollo-CDP =====================================
 Dollo-CDP is a program that solves the large Dollo parsimony problem for binary
@@ -75,7 +75,7 @@ OPTIONS:
         Name of file for writing output species tree (default: stdout)
 
 Contact: Post issue to Github (https://github.com/molloy-lab/Dollo-CDP)
-        or email Junyan Dai (jdai1234@umd.edu) & Erin Molloy (ekmolloy@umd.edu)
+         or email Junyan Dai (jdai1234@umd.edu) & Erin Molloy (ekmolloy@umd.edu)
 
 If you use Dollo-CDP in your work, please cite:
   Dai, Rubel, Han, Molloy, 2024, "Dollo-CDP: a polynomial-time algorithm for

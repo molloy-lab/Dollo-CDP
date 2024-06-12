@@ -35,7 +35,7 @@ const std::string help =
 "[(-o|--output) <output file>]\n"
 "        Name of file for writing output species tree (default: stdout)\n\n"
 "Contact: Post issue to Github (https://github.com/molloy-lab/Dollo-CDP)\n"
-"        or email Junyan Dai (jdai1234@umd.edu) & Erin Molloy (ekmolloy@umd.edu)\n\n"
+"         or email Junyan Dai (jdai1234@umd.edu) & Erin Molloy (ekmolloy@umd.edu)\n\n"
 "If you use Dollo-CDP in your work, please cite:\n"
 "  Dai, Rubel, Han, Molloy, 2024, \"Dollo-CDP: a polynomial-time algorithm for\n"
 "  the clade-constrained large Dollo parsimony problem\", Algorithms for Molecular\n"
@@ -61,7 +61,7 @@ void print_clades_set(clades_set cs, vector<string> &labels) {
 }
 
 int main(int argc, char** argv) {
-  std::cout << "Dollo-CDP version 1.0.0\nCOMMAND: ";
+  std::cout << "Dollo-CDP version 1.0.1\nCOMMAND: ";
   for (int j = 0; j < argc; j ++) 
     std::cout << argv[j] << " ";
   std::cout << std::endl;
