@@ -37,9 +37,9 @@ const std::string help =
 "Contact: Post issue to Github (https://github.com/molloy-lab/Dollo-CDP)\n"
 "        or email Junyan Dai (jdai1234@umd.edu) & Erin Molloy (ekmolloy@umd.edu)\n\n"
 "If you use Dollo-CDP in your work, please cite:\n"
-"  Dai, Rubel, Han, Molloy, 2023, \"Leveraging Constraints Plus Dynamic \n"
-"  Programming for the Large Dollo Parsimony Problem\", WABI 2023,\n"
-"  https://drops.dagstuhl.de/opus/volltexte/2023/18631/."
+"  Dai, Rubel, Han, Molloy, 2024, \"Dollo-CDP: a polynomial-time algorithm for\n"
+"  the clade-constrained large Dollo parsimony problem\", Algorithms for Molecular\n"
+"  Biology, https://doi.org/10.1186/s13015-023-00249-9.\n"
 "====================================================================================\n\n";
 
 
