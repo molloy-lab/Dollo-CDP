@@ -38,7 +38,7 @@ To run Dollo-CDP on the Myotis data set, use the following command:
 
 The output tree should be
 ```
-((Davi),((Bran),(((Sept),((Cili),(Thys))),(((Vive),((Luci),(Occu))),((Aust),((Yuma),(Veli)))))));
+(Davi,(Bran,((Sept,(Thys,Cili)),((Vive,(Luci,Occu)),(Aust,(Yuma,Veli))))));
 ```
 This tree has a Dollo score of `11618` and is topologically equivalent to the Dollo tree presented in Figure 2A by Korstian et al.
 

@@ -209,8 +209,9 @@ Node* back_solve(opt &f, state_record &st_l, state_record &st_r, child_record &g
 
     Node *parent_ptr = std::get<1>(t);
     if (full.count() == 1) {
-      Node *new_child_ptr = new Node(full.to_labels(labels)); 
-      parent_ptr->add_child(new_child_ptr);
+      // Node *new_child_ptr = new Node(full.to_labels(labels)); 
+      // parent_ptr->add_child(new_child_ptr);
+      parent_ptr->label = full.to_labels(labels);
       
     } else if (full.count() >= 2) {
       
